@@ -1,0 +1,89 @@
+server:
+  port: 8080
+  address: 0.0.0.0
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: career-planning-system
+  datasource:
+    url: jdbc:mysql://localhost:3306/career_planning_system?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: ${DB_PASSWORD:135794268}  # 默认密码，从.env读取
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  # Redis 配置（用于 JWT Token 黑名单）
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:   # Redis 密码，无密码留空
+      database: 0
+      timeout: 5000ms
+
+# JWT 配置
+jwt:
+  # 密钥（必须配置，至少32字符），建议通过环境变量 JWT_SECRET 注入，勿在代码中硬编码
+  secret: ${JWT_SECRET:career-planning-a13-fuchuang-2025-secret-key-must-be-32bytes}
+  # Token 有效期（毫秒），默认 24 小时
+  expiration-ms: 86400000
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# AI 服务配置
+# provider: dashscope（阿里云百炼 qwen3.6-plus，对话）
+# embedding-provider: dashscope（阿里云百炼 text-embedding-v4，向量2048维）
+# 重试配置
+ai:
+  provider: dashscope
+  embedding-provider: dashscope
+  # 简历文本最大截取长度
+  resume:
+    max-text-length: 4000
+  # AI服务重试配置
+  retry:
+    max-attempts: 3
+    backoff-ms: 1000
+
+# 阿里云百炼（DashScope）配置
+dashscope:
+  api-key: ${DASHSCOPE_API_KEY:}  # 请在环境变量中配置API Key，勿在此处硬编码
+
+# Qdrant向量数据库配置
+qdrant:
+  connect-timeout: 3000   # HTTP连接超时（毫秒）
+  read-timeout: 8000       # HTTP读取超时（毫秒），Qdrant 健康检查需要较长时间
+  host: localhost
+  port: 6333
+  api-key:  # Qdrant API Key，如需认证请填写
+  collection-name: career-knowledge-15  # 集合名称（15个核心岗位版）
+  # 启动时自动初始化，默认开启。设为 false 可禁用，由外部手动调用 POST /api/rag/init
+  auto-init: true
+  # 知识库文件路径（15个核心岗位版 v2），使用 classpath 方式确保资源正确加载
+  knowledge-base-path: classpath:data/job_profiles_15.json
+  # 换岗路径文件路径
+  transfer-paths-path: classpath:data/transfer_paths_15.json
+
+# 阿里云 OSS：华东1（杭州），endpoint 勿带 https://
+# 建议使用环境变量覆盖敏感信息：OSS_ACCESS_KEY_ID, OSS_ACCESS_KEY_SECRET
+aliyun:
+  oss:
+    endpoint: ${OSS_ENDPOINT:oss-cn-hangzhou.aliyuncs.com}
+    bucket-name: ${OSS_BUCKET_NAME:a13fuchuang}
+    access-key-id: ${OSS_ACCESS_KEY_ID:}
+    access-key-secret: ${OSS_ACCESS_KEY_SECRET:}
+
+# 文件上传配置
+upload:
+  # 本地存储基础路径（不配置时使用 user.dir/data/resumes）
+  base-path: ${UPLOAD_BASE_PATH:}
+  # 本地简历存储子目录
+  resumes-subdir: resumes

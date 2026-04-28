@@ -1,0 +1,505 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_at": "2026-04-11",
+    "total_jobs": 15,
+    "description": "15个核心岗位的换岗路径图谱"
+  },
+  "transfer_paths": [
+    {
+      "from_job": "Java开发工程师",
+      "paths": [
+        {
+          "target": "前端开发工程师",
+          "difficulty": 3,
+          "skills": "HTML、CSS、JavaScript、Vue",
+          "duration": "6-12月",
+          "advantage": "理解接口设计，全栈转型快"
+        },
+        {
+          "target": "大数据工程师",
+          "difficulty": 3,
+          "skills": "Hadoop、Spark、Flink",
+          "duration": "1-2年",
+          "advantage": "Java技术栈直接复用"
+        },
+        {
+          "target": "技术经理",
+          "difficulty": 4,
+          "skills": "项目管理、团队管理",
+          "duration": "2-3年",
+          "advantage": "技术深度积累深厚"
+        },
+        {
+          "target": "DevOps工程师",
+          "difficulty": 3,
+          "skills": "Docker、K8S、CI/CD",
+          "duration": "6-12月",
+          "advantage": "熟悉Linux环境"
+        }
+      ]
+    },
+    {
+      "from_job": "测试工程师",
+      "paths": [
+        {
+          "target": "Java开发工程师",
+          "difficulty": 3,
+          "skills": "Java、自动化测试框架",
+          "duration": "1-2年",
+          "advantage": "测试经验让你更懂代码质量"
+        },
+        {
+          "target": "前端开发工程师",
+          "difficulty": 3,
+          "skills": "JavaScript、Vue",
+          "duration": "6-12月",
+          "advantage": "熟悉Web技术"
+        },
+        {
+          "target": "产品经理",
+          "difficulty": 3,
+          "skills": "产品设计、需求分析",
+          "duration": "1-2年",
+          "advantage": "质量意识强，需求理解深入"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 3,
+          "skills": "PMP、项目管理",
+          "duration": "1-2年",
+          "advantage": "测试项目管理优势大"
+        }
+      ]
+    },
+    {
+      "from_job": "技术支持工程师",
+      "paths": [
+        {
+          "target": "实施工程师",
+          "difficulty": 2,
+          "skills": "项目实施、交付管理",
+          "duration": "3-6月",
+          "advantage": "技术支持到实施自然过渡"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 3,
+          "skills": "Java、技术支持开发",
+          "duration": "1-2年",
+          "advantage": "技术问题解决能力强"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 3,
+          "skills": "PMP、项目管理",
+          "duration": "1-2年",
+          "advantage": "技术支持项目管理优势大"
+        },
+        {
+          "target": "产品经理",
+          "difficulty": 4,
+          "skills": "产品设计、售前产品",
+          "duration": "1-2年",
+          "advantage": "技术支持到售前/产品转型"
+        }
+      ]
+    },
+    {
+      "from_job": "实施工程师",
+      "paths": [
+        {
+          "target": "项目经理",
+          "difficulty": 2,
+          "skills": "PMP、项目管理",
+          "duration": "1-2年",
+          "advantage": "实施经验直接用于项目管理"
+        },
+        {
+          "target": "技术支持工程师",
+          "difficulty": 2,
+          "skills": "故障诊断、技术文档",
+          "duration": "3-6月",
+          "advantage": "实施到技术支持自然过渡"
+        },
+        {
+          "target": "产品经理",
+          "difficulty": 3,
+          "skills": "产品设计、解决方案",
+          "duration": "1-2年",
+          "advantage": "实施到解决方案产品转型"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 4,
+          "skills": "Java、ERP开发",
+          "duration": "1-2年",
+          "advantage": "ERP实施到开发是常见路径"
+        }
+      ]
+    },
+    {
+      "from_job": "前端开发工程师",
+      "paths": [
+        {
+          "target": "Java开发工程师",
+          "difficulty": 3,
+          "skills": "Java、Spring Boot",
+          "duration": "1-2年",
+          "advantage": "前端已理解全栈概念"
+        },
+        {
+          "target": "UI设计师",
+          "difficulty": 3,
+          "skills": "Figma、Sketch、设计规范",
+          "duration": "1-2年",
+          "advantage": "界面开发经验，设计思维有优势"
+        },
+        {
+          "target": "全栈工程师",
+          "difficulty": 2,
+          "skills": "Node.js、后端框架",
+          "duration": "6-12月",
+          "advantage": "前端技能已是全栈基础"
+        },
+        {
+          "target": "产品经理",
+          "difficulty": 3,
+          "skills": "产品设计、需求分析",
+          "duration": "1-2年",
+          "advantage": "前端用户思维，产品转型快"
+        }
+      ]
+    },
+    {
+      "from_job": "C/C++开发工程师",
+      "paths": [
+        {
+          "target": "嵌入式开发工程师",
+          "difficulty": 2,
+          "skills": "ARM、RTOS、嵌入式C",
+          "duration": "6-12月",
+          "advantage": "C++是嵌入式主流语言"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 3,
+          "skills": "Java、后端开发",
+          "duration": "1-2年",
+          "advantage": "编程基础扎实，转后端快"
+        },
+        {
+          "target": "游戏开发工程师",
+          "difficulty": 2,
+          "skills": "Unity3D、Unreal、图形学",
+          "duration": "6-12月",
+          "advantage": "C++是游戏引擎核心语言"
+        },
+        {
+          "target": "音视频开发工程师",
+          "difficulty": 3,
+          "skills": "FFmpeg、WebRTC、编解码",
+          "duration": "1-2年",
+          "advantage": "底层开发经验直接复用"
+        }
+      ]
+    },
+    {
+      "from_job": "运维工程师",
+      "paths": [
+        {
+          "target": "DevOps工程师",
+          "difficulty": 2,
+          "skills": "K8S、Docker、CI/CD",
+          "duration": "6-12月",
+          "advantage": "运维基础直接复用"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 4,
+          "skills": "Java、自动化运维",
+          "duration": "1-2年",
+          "advantage": "运维开发(SRE)方向"
+        },
+        {
+          "target": "DBA工程师",
+          "difficulty": 3,
+          "skills": "MySQL、PG、Oracle",
+          "duration": "6-12月",
+          "advantage": "数据库运维经验直接复用"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 4,
+          "skills": "PMP、运维管理",
+          "duration": "2-3年",
+          "advantage": "运维团队管理发展方向"
+        }
+      ]
+    },
+    {
+      "from_job": "Python开发工程师",
+      "paths": [
+        {
+          "target": "数据分析师",
+          "difficulty": 2,
+          "skills": "SQL、Python数据分析",
+          "duration": "3-6月",
+          "advantage": "Python是数据分析主流语言"
+        },
+        {
+          "target": "算法工程师",
+          "difficulty": 3,
+          "skills": "机器学习、深度学习",
+          "duration": "1-2年",
+          "advantage": "Python是算法主流语言"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 3,
+          "skills": "Java、后端开发",
+          "duration": "1-2年",
+          "advantage": "编程基础扎实"
+        },
+        {
+          "target": "前端开发工程师",
+          "difficulty": 3,
+          "skills": "JavaScript、Vue、React",
+          "duration": "6-12月",
+          "advantage": "Python+前端=全栈"
+        }
+      ]
+    },
+    {
+      "from_job": "算法工程师",
+      "paths": [
+        {
+          "target": "数据分析师",
+          "difficulty": 2,
+          "skills": "SQL、Python数据分析",
+          "duration": "3-6月",
+          "advantage": "算法和数据天然结合"
+        },
+        {
+          "target": "产品经理",
+          "difficulty": 3,
+          "skills": "产品设计、AI产品",
+          "duration": "1-2年",
+          "advantage": "AI技术背景，产品优势大"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 4,
+          "skills": "Java、工程化",
+          "duration": "1-2年",
+          "advantage": "算法落地需要工程化能力"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 4,
+          "skills": "PMP、团队管理",
+          "duration": "2-3年",
+          "advantage": "算法团队管理发展方向"
+        }
+      ]
+    },
+    {
+      "from_job": "数据分析师",
+      "paths": [
+        {
+          "target": "算法工程师",
+          "difficulty": 3,
+          "skills": "机器学习、深度学习",
+          "duration": "1-2年",
+          "advantage": "数据分析是算法基础"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 4,
+          "skills": "Java、数据平台",
+          "duration": "1-2年",
+          "advantage": "数据平台开发需求大"
+        },
+        {
+          "target": "产品经理",
+          "difficulty": 3,
+          "skills": "产品设计、数据产品",
+          "duration": "1-2年",
+          "advantage": "数据驱动产品决策"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 4,
+          "skills": "PMP、BI项目管理",
+          "duration": "1-2年",
+          "advantage": "数据分析项目管理专长"
+        }
+      ]
+    },
+    {
+      "from_job": "UI设计师",
+      "paths": [
+        {
+          "target": "前端开发工程师",
+          "difficulty": 3,
+          "skills": "HTML、CSS、JavaScript",
+          "duration": "6-12月",
+          "advantage": "设计转前端有天然优势"
+        },
+        {
+          "target": "产品经理",
+          "difficulty": 3,
+          "skills": "产品设计、UX研究",
+          "duration": "1-2年",
+          "advantage": "设计背景产品经理优势大"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 4,
+          "skills": "PMP、设计团队管理",
+          "duration": "2-3年",
+          "advantage": "设计团队管理发展方向"
+        },
+        {
+          "target": "UX研究员",
+          "difficulty": 3,
+          "skills": "用户研究、可用性测试",
+          "duration": "6-12月",
+          "advantage": "设计到用户研究自然过渡"
+        }
+      ]
+    },
+    {
+      "from_job": "嵌入式开发工程师",
+      "paths": [
+        {
+          "target": "硬件测试工程师",
+          "difficulty": 2,
+          "skills": "硬件测试方法、仪器使用",
+          "duration": "3-6月",
+          "advantage": "嵌入式测试是专业方向"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 4,
+          "skills": "Java、IoT平台",
+          "duration": "1-2年",
+          "advantage": "物联网平台开发需求大"
+        },
+        {
+          "target": "测试工程师",
+          "difficulty": 3,
+          "skills": "嵌入式测试",
+          "duration": "6-12月",
+          "advantage": "嵌入式测试是专业方向"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 4,
+          "skills": "PMP、嵌入式项目管理",
+          "duration": "2-3年",
+          "advantage": "嵌入式项目管理专长"
+        }
+      ]
+    },
+    {
+      "from_job": "AI工程师",
+      "paths": [
+        {
+          "target": "算法工程师",
+          "difficulty": 2,
+          "skills": "算法研究、前沿技术",
+          "duration": "6-12月",
+          "advantage": "AI工程师本身具备算法能力"
+        },
+        {
+          "target": "大数据工程师",
+          "difficulty": 3,
+          "skills": "数据工程、特征工程",
+          "duration": "1-2年",
+          "advantage": "AI落地依赖数据工程"
+        },
+        {
+          "target": "产品经理",
+          "difficulty": 3,
+          "skills": "AI产品设计、需求分析",
+          "duration": "1-2年",
+          "advantage": "AI背景，产品经理转型有优势"
+        },
+        {
+          "target": "运维工程师",
+          "difficulty": 3,
+          "skills": "MLOps、模型部署",
+          "duration": "6-12月",
+          "advantage": "AI运维是新兴方向"
+        }
+      ]
+    },
+    {
+      "from_job": "网络安全工程师",
+      "paths": [
+        {
+          "target": "运维工程师",
+          "difficulty": 2,
+          "skills": "Linux、Shell、监控",
+          "duration": "3-6月",
+          "advantage": "安全运维本就是安全工程师工作"
+        },
+        {
+          "target": "Java开发工程师",
+          "difficulty": 3,
+          "skills": "Java安全编程、安全框架",
+          "duration": "1-2年",
+          "advantage": "安全编程，企业安全开发需求大"
+        },
+        {
+          "target": "测试工程师",
+          "difficulty": 2,
+          "skills": "安全测试、渗透测试方法",
+          "duration": "6-12月",
+          "advantage": "安全测试是测试的特殊领域"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 4,
+          "skills": "PMP、安全项目管理",
+          "duration": "2-3年",
+          "advantage": "安全项目管理发展方向"
+        }
+      ]
+    },
+    {
+      "from_job": "硬件测试工程师",
+      "paths": [
+        {
+          "target": "嵌入式开发工程师",
+          "difficulty": 3,
+          "skills": "C、ARM、RTOS",
+          "duration": "1-2年",
+          "advantage": "硬件测试经验，嵌入式入门快"
+        },
+        {
+          "target": "质量工程师",
+          "difficulty": 2,
+          "skills": "质量管理、ISO标准",
+          "duration": "6-12月",
+          "advantage": "测试即质量工作，自然转型"
+        },
+        {
+          "target": "测试工程师",
+          "difficulty": 2,
+          "skills": "软件测试方法",
+          "duration": "3-6月",
+          "advantage": "测试基础相通"
+        },
+        {
+          "target": "项目经理",
+          "difficulty": 4,
+          "skills": "PMP、测试项目管理",
+          "duration": "2-3年",
+          "advantage": "测试团队管理发展方向"
+        }
+      ]
+    }
+  ]
+}
