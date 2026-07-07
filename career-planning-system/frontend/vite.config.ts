@@ -40,6 +40,17 @@ export default defineConfig(({ mode }) => {
       },
     },
     base: '/career-planning-system/',
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vue-ecosystem': ['vue', 'vue-router', 'pinia'],
+            'element-plus': ['element-plus'],
+            'echarts': ['echarts'],
+          },
+        },
+      },
+    },
     server: {
       host: '0.0.0.0',
       port: 5173,
