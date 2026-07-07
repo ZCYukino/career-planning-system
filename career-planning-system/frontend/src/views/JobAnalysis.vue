@@ -378,7 +378,7 @@ const initRadarChart = () => {
   const option = {
     animation: true,
     animationDuration: 1200,
-    animationEasing: 'cubicOut',
+    animationEasing: 'cubicOut' as const,
     tooltip: { trigger: 'item' },
     radar: {
       indicator: radarData.value.map(item => ({ name: item.name, max: 5 })),

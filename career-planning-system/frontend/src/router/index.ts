@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Login from '../views/Login.vue'
 import JobAnalysis from '../views/JobAnalysis.vue'
 import StudentProfile from '../views/StudentProfile.vue'
@@ -7,7 +7,7 @@ import CareerReport from '../views/CareerReport.vue'
 import AccountManagement from '../views/AccountManagement.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/login',
